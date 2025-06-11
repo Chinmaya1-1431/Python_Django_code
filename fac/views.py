@@ -3,7 +3,7 @@ from django.shortcuts import render,HttpResponse
 # Create your views here.
 def home(request):
     cont={
-        "name":"chinmaya",
+        "Name":"chinmaya",
         "Age": 26,
         "Address":
     {
@@ -11,7 +11,7 @@ def home(request):
             "City":"Thiruvallur"
     }
     }
-    return render(request,"home.html",cont)
+    return render(request,"home.html",{"value":cont})
     # if age >= 18:
     #     return HttpResponse("You are eligible")
     # else:

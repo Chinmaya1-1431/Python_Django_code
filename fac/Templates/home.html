@@ -12,11 +12,29 @@
 </head>
 <body>
 <h1>Welcome Html Page</h1>
-<p>{{name}}</p>
-<p>{{Age}}</p>
-<p>{{Address}}</p>
+<div>
+    <table>
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Address</td>
+    </tr>
+    {% for i in value %}
+    <tr>
+        <td>{{i.name}}</td>
+        <td>{{i.Age}}</td>
+        <td>{{i.Address}}</td>
+    </tr>
+    {% endfor %}
+    </table>
+</div>
+
+
+<!--<p>{{name}}</p>-->
+<!--<p>{{Age}}</p>-->
+<!--<p>{{Address}}</p>-->
 <!--<p>{{Stress}}</p>-->
 <!--<p>{{City}}</p>-->
-<input type="text">{{Name}}
+<!--<input type="text">{{Name}}-->
 </body>
 </html>
